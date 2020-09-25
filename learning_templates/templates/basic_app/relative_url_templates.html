@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <h1>Welcome to Relative URL Templates</h1>
+    <!-- el basic_app de abajo no es el folder sino la variable basic_app del archivo basic_app/urls.py   -->
+    <!-- esta es la forma de meter templates   -->
+    <a href="{% url 'basic_app:other' %}">The Other page</a>
+    <!--    <a href="basic_app/other.html">The Other page</a>-->
+    <a href="{% url 'admin:index' %}">Link to Admin</a>
+    <a href="{% url 'index' %}">Link to Index</a>
+
+</body>
+</html>
